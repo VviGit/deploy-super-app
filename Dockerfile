@@ -1,9 +1,20 @@
-FROM node:12 as builder
+FROM node:10 as builder
+
+COPY app/* /app
+
+WORKDIR /app
+
+RUN npm install
+
+CMD ["node", "server.js"]
+
+FROM node:10-slim
 
 EXPOSE 3000
 
-COPY app/* .
+COPY --from=builder /app/server.js /app/server.js
+COPY --from=builder /app/node_modules /app/node_modules
 
-RUN npm install
+WORKDIR /app
 
 CMD ["node", "server.js"]
