@@ -40,6 +40,7 @@ make stop-app
 
 ## Next Steps
 1. See with developers prerequisites to start the app, if possible reduce build image size and run image for security reasons.
+2. See with developers to set up versionning for application and imae build.
 3. Integrate image build in CI pipeline.
-2. Add integration to a docker registry (push image after build).
-4. Integrate image pull in CD pipeline.
+4. Add integration to a docker registry (push image after build).
+5. Integrate image pull in CD pipeline.
