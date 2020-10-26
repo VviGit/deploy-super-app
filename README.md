@@ -8,6 +8,7 @@ Package and deploy the application Basic Express app
 2. [Prerequisites](#prerequisites)
 2. [Technical info](#technical-stack)
 3. [Getting started](#getting-started)
+4. [Next steps](#next-steps)
 
 ## Goals
 
@@ -36,3 +37,9 @@ You can stop the app with
 ```sh
 make stop-app
 ```
+
+## Next Steps
+1. See with developers prerequisites to start the app, if possible reduce build image size and run image for security reasons.
+3. Integrate image build in CI pipeline.
+2. Add integration to a docker registry (push image after build).
+4. Integrate image pull in CD pipeline.
